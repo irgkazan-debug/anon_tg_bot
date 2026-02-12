@@ -20,7 +20,7 @@ bot.on("text", async (ctx) => {
   try {
     await ctx.telegram.sendMessage(
       CHANNEL_ID,
-      ✉️ Анонимно:\n\n${ctx.message.text}
+      Анонимно:\n\n${ctx.message.text}
     );
     await ctx.reply("Готово ✅");
   } catch (e) {
